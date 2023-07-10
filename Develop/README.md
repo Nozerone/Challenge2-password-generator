@@ -4,4 +4,7 @@
 
 In this version of homework 3, my password generator I developed on the given code by declaring my variables which included the possible character choices in arrays to be selected from.
 
-I created functions that prompt the user for information required to generate a random password with the criteria given in the assignment.
+I created functions that prompt the user for information required to generate a random password with the criteria given in the assignment. Added if statements 
+
+
+
