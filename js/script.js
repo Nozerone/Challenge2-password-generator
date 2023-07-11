@@ -16,6 +16,14 @@ var userChoice = [];
 
   var chosenCharacterLength =  prompt("how many characters would you like your password to be? Please choose between 8 and 128 ");
   
+  //added if statment to require passwors character min and max.
+
+  if (chosenCharacterLength <= 8 || chosenCharacterLength >= 128) {
+    alert("You must choose a length of at least 8 no more than 128");
+    return  generatePassword();
+    
+  }
+
   var chosenSpecialChar =  confirm("Do you want to use special characters?");
 
   var chosenUpperCase = confirm("DO you want to use Upper Case Characters?");
@@ -53,7 +61,9 @@ var userChoice = [];
   }
 // Write password to the #password input
 function writePassword() {
+  console.log("runnign")
   var password = generatePassword();
+  console.log(password);
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
